@@ -51,19 +51,4 @@ class MicropostsController extends Controller
 
         return redirect()->back();
     }
-    
-    public function favorites($id)
-    {
-        \Auth::user()->favorite($id);
-        
-        return redirect()->back();
-    }
-    
-    
-    public function unfavorites($id)
-    {
-        \Auth::user()->favorite($id);
-        
-        return redirect()->back();
-    }
 }
